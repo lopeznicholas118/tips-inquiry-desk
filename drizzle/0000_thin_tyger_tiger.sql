@@ -1,0 +1,20 @@
+CREATE TABLE `inquiries` (
+	`id` text PRIMARY KEY NOT NULL,
+	`created_at` integer NOT NULL,
+	`updated_at` integer NOT NULL,
+	`customer_name` text NOT NULL,
+	`customer_email` text NOT NULL,
+	`original_message` text NOT NULL,
+	`detected_language` text,
+	`category` text,
+	`urgency` text,
+	`message_en` text,
+	`message_es` text,
+	`draft_reply` text,
+	`draft_reply_en` text,
+	`missing_info` text,
+	`needs_human` integer DEFAULT false NOT NULL,
+	`status` text DEFAULT 'new' NOT NULL,
+	`reviewed_by` text,
+	`reviewed_at` integer
+);
