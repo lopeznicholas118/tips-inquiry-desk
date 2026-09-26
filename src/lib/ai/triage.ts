@@ -11,7 +11,11 @@ export const TriageResult = z.object({
   urgency: z.enum(["low", "normal", "high"]),
   message_en: z.string(),
   message_es: z.string(),
-  draft_reply: z.string().describe("Reply in the customer's own language"),
+  draft_reply: z.string().describe(
+    "Reply in the SAME language as detected_language: English if detected_language is 'en', " +
+    "Spanish if detected_language is 'es'." + 
+    "Never default to Spanish for an English-language inquiry."
+  ),
   draft_reply_en: z.string().describe("English version, for staff review"),
   missing_info: z.array(z.string()),
   needs_human: z.boolean(),
