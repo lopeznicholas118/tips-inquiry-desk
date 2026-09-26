@@ -11,12 +11,12 @@
     "db:migrate": "drizzle-kit migrate",
     "db:studio": "drizzle-kit studio",
     "pretest": "DATABASE_URL=./sqlite.test.db drizzle-kit migrate",
-    "test": "vitest run"
+    "test": "vitest run",
+    "eval": "tsx --env-file=.env.local scripts/run-evals.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.128.0",
     "better-sqlite3": "^13.0.3",
-    "dotenv": "^18.0.3",
     "drizzle-orm": "^0.45.3",
     "next": "16.3.6",
     "react": "19.2.8",
@@ -32,6 +32,7 @@
     "drizzle-kit": "^0.31.11",
     "eslint": "^9",
     "eslint-config-next": "16.3.6",
+    "franc": "^6.2.0",
     "tsx": "^4.23.15",
     "typescript": "^5",
     "vitest": "^5.0.1"
