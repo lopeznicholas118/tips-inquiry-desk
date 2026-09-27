@@ -31,6 +31,8 @@ export class TriageError extends Error {
 
 const defaultClient = new Anthropic();
 
+const MODEL = process.env.ANTHROPIC_MODEL ?? "claude-sonnet-5";
+
 export async function triageInquiry(
   message: string,
   businessFacts: string,
@@ -40,7 +42,7 @@ export async function triageInquiry(
 
   try {
     response = await client.messages.create({
-      model: "claude-sonnet-5",
+      model: MODEL,
       max_tokens: 2000,
       system: `${SYSTEM_PROMPT}\n\n<business_facts>\n${businessFacts}\n</business_facts>`,
       tools: [
