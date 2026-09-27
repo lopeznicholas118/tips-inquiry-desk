@@ -1,9 +1,8 @@
-// src/app/api/inquiries/[id]/route.test.ts
-import { describe, it, expect, beforeEach } from "vitest";
-import { eq } from "drizzle-orm";
-import { db } from "@/db";
-import { inquiries } from "@/db/schema";
-import { PATCH } from "./route";
+import {describe, it, expect, beforeEach} from "vitest";
+import {eq} from "drizzle-orm";
+import {db} from "@/db";
+import {inquiries} from "@/db/schema";
+import {PATCH} from "./route";
 
 async function seedInquiry(status: string) {
   const id = crypto.randomUUID();

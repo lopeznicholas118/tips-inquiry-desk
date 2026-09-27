@@ -1,4 +1,3 @@
-// src/app/api/inquiries/route.test.ts
 import { describe, it, expect, vi, beforeEach } from "vitest";
 import { eq } from "drizzle-orm";
 import { db } from "@/db";

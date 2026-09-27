@@ -1,1 +1,1 @@
-process.env.DATABASE_URL = "./sqlite.test.db";
+process.env.DATABASE_URL = "file:./sqlite.test.db";
