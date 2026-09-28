@@ -3,7 +3,7 @@
 A bilingual (English/Spanish) customer inquiry triage system, built as a
 portfolio project for The Tips' software engineering internship.
 
-Check the deployed project on Vercel: [text](https://tips-inquiry-desk-ocfmj4avf-lopeznicholas118.vercel.app/)
+Check the deployed project on Vercel [here](https://tips-inquiry-desk-ocfmj4avf-lopeznicholas118.vercel.app/).
 
 ## The problem
 
