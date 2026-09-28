@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const STEPS = [
   {
-    title: "A customer writes in",
+    title: "A customer writes",
     body: "Inquiries arrive in English or Spanish through a simple public form.",
   },
   {
@@ -18,19 +18,18 @@ const STEPS = [
 
 export default function Home() {
   return (
-    <main className="mx-auto max-w-3xl px-6 py-16">
-      <p className="text-sm font-medium text-gray-500">Portfolio project</p>
+    <main className="mx-auto max-w-3xl px-6 py-10">
       <h1 className="mt-2 text-4xl font-semibold tracking-tight">Tips Inquiry Desk</h1>
       <p className="mt-4 text-lg text-gray-600">
-        A bilingual (English/Spanish) inquiry triage tool for a golf club. The AI drafts, and a human approves.
+        A bilingual (English/Spanish) inquiry triage tool for a golf club.{" "} The AI drafts, and a human approves.
       </p>
 
       <div className="mt-8 flex flex-wrap gap-3">
-        <Link href="/submit" className="rounded bg-black px-5 py-2.5 text-sm text-white">
-          Submit an inquiry
+        <Link href="/submit" className="rounded border px-5 py-2.5 text-sm">
+          Submit an Inquiry
         </Link>
         <Link href="/inquiries" className="rounded border px-5 py-2.5 text-sm">
-          Open staff inbox
+          Open Staff Inbox
         </Link>
       </div>
 
@@ -48,12 +47,14 @@ export default function Home() {
         ))}
       </ol>
 
-      <p className="mt-14 text-sm text-gray-500">
-        Try it: submit a message in Spanish, then open the staff inbox to review the draft. All data here is
-        fictional.{" "}
-        <a>
-          href=https://github.com/lopeznicholas118/tips-inquiry-desk
-          className=underline
+      <p className="mt-10 text-sm text-gray-600">
+        Try it: submit a message in Spanish, then open the staff inbox to review the draft. <br/>All data here is
+        fictional.{"  "}
+        <a
+          href="https://github.com/lopeznicholas118/tips-inquiry-desk"
+          className="underline">
+          <br />
+          <br />
 
           Source on GitHub
         </a>
